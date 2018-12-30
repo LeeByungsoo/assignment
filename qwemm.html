@@ -7,85 +7,55 @@
 	body{
 		margin : 0px
 	}
- 		.q{
-			background: red;
-			height: 50px;
-			width: 50px;
-			box-shadow: 0 50px 50px rgba(0,0,0,.120);
-			transition: all 800ms;
-			
-		}
-		.q:hover{
-			background: black;
-			transform: translate(50px);
-		}
-		.q:active{
-			background: yellow;
-			transform: scale(2);
-		}
-		.w{
-			background: orange;
-			height: 50px;
-			width: 50px;
-			box-shadow: 0 50px 50px rgba(0,0,0,.120);
-			transition: all 800ms;
-			top: 50px;
-		}
-		.w:hover{
-			background: black;
-			transform: translate(50px);
-		}
-		.w:active{
-			background: yellow;
-			transform: scale(0.5);
-			
-		}
-		.e{
-			background: yellow;
-			height: 50px;
-			width: 50px;
-			box-shadow: 0 50px 50px rgba(0,0,0,.120);
-			transition: all 800ms;
-			top: 50px;
-		}
-		.e:hover{
-			background: black;
-			transform: translate(50px);
-		}
-		.e:active{
-			background: yellow;
-			transform: scale(2);
-			
-		}
-		.r{
-			background: green;
-			height: 50px;
-			width: 50px;
-			box-shadow: 0 50px 50px rgba(0,0,0,.120);
-			transition: all 800ms;
-			top: 60px;
-		}
-		.r:hover{
-			background: black;
-			transform: scale(50px);
-		}
-		.r:active{
-			background: yellow;
-			transform: translate(0.5);
-			
-		}
+ 		.q{background: red; top: 300px;}
+		.w{background: orange; top: 350px;}
+		.e{background: yellow; top: 400px;}
+		.r{background: green; top: 450px;}
+		.m{height: 50px;width: 50px;box-shadow: 0 50px 50px rgba(0,0,0,.120);transition: all 5000ms; position: relative; right: -50px;}
+		.m:hover{transform: translate(1770px);}
+		.j:active{transform: scale(2);background: yellow;}
+		.j2:active{transform: scale(0.5);background: yellow;}
+
+		.q1{background: blue; top: 150px;}
+		.w1{background: navy; top: 200px;}
+		.e1{background: purple; top: 250px;}
+		.m1{height: 50px;width: 50px;box-shadow: 0 50px 50px rgba(0,0,0,.120);transition: all 5000ms; position: relative; right: -1820px;}
+		.m1:hover{transform: translate(-1770px);}
+
+		.q2{background: red; right: -750px; top: -300px;}
+		.w2{background: orange; right: -850px; top: -350px;}
+		.e2{background: yellow; right: -950px; top: -400px;}
+		.r2{background: green; right: -1050px; top: -450px;}
+		.m2{height: 50px;width: 50px;box-shadow: 0 50px 50px rgba(0,0,0,.120);transition: all 5000ms; position: relative;}
+		.m2:hover{transform: translate(0px,800px);}
+
+		.q3{background: blue; right: -800px; top: 300px;}
+		.w3{background: navy; right: -900px; top: 250px;}
+		.e3{background: purple; right: -1000px; top: 200px;}
+		.m3{height: 50px;width: 50px;box-shadow: 0 50px 50px rgba(0,0,0,.120);transition: all 5000ms; position: relative;}
+		.m3:hover{transform: translate(0px,-800px);}
 
 
 	</style>
 </head> 
 <body>
-	<div class="q"></div>
-	<br><br>
-	<div class="w"></div>
-	<br><br>
-	<div class="e"></div>
-	<br><br>
-	<div class="r"></div>
+	<div class="q m j"></div>
+	<div class="w m j2"></div>
+	<div class="e m j"></div>
+	<div class="r m j2"></div>
+
+	<div class="q1 m1"></div>
+	<div class="w1 m1"></div>
+	<div class="e1 m1"></div>
+
+	<div class="q2 m2"></div>
+	<div class="w2 m2"></div>
+	<div class="e2 m2"></div>
+	<div class="r2 m2"></div>
+
+	<div class="q3 m3"></div>
+	<div class="w3 m3"></div>
+	<div class="e3 m3"></div>
 
 
 

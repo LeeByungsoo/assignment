@@ -17,14 +17,26 @@
 		.img{width: 100%;padding: 0px;}
 		.xxx{background: #EEEEEE;}
 		.ooo{padding: 0px 0px 0px 50px;background: #304FFE;}
-		.m{background: #000000;padding: 5px 17px 5px 16px;width: 0px;}
-		.mm{background: #FFFFFF;padding: 2px 17px 3px 16px;width: 0px;}
-		.mmm{background: #000000;padding: 2px 17px 3px 16px;width: 0px;}
-		.mmmm{background: #FFFFFF;padding: 2px 17px 3px 16px;width: 0px;}
-		.mmmmm{background: #000000;padding: 2px 17px 3px 16px;width: 0px;}
-		.mmmmmm{background: #FFFFFF;padding: 2px 17px 3px 16px;width: 0px;}
-		.mmmmmmm{background: #000000;padding: 5px 17px 5px 16px;width: 0px;}
-		.e{padding: 0px 0px 0px 7px;background: #000000;width: 41px;}
+		.m:hover .m3{transform: translate(0,10px) rotate(45deg);}
+		.m:hover .m5{opacity: 0;}
+		.m:hover .m7{transform: translate(0,-10px) rotate(-45deg);}
+		.m1{background: #000000;padding: 2px 17px 3px 16px;width: 0px;}
+		.m:active .m1{background: #ffffff;}
+		.m2{background: #000000;padding: 2px 17px 3px 16px;width: 0px;}
+		.m3{background: #FFFFFF;padding: 2px 17px 3px 16px;width: 0px;}
+		.m4{background: #000000;padding: 2px 17px 3px 16px;width: 0px;}
+		.m5{background: #FFFFFF;padding: 2px 17px 3px 16px;width: 0px;}
+		.m6{background: #000000;padding: 2px 17px 3px 16px;width: 0px;}
+		.m7{background: #FFFFFF;padding: 2px 17px 3px 16px;width: 0px;}
+		.m:active .m7{background: #000000;}
+		.m8{background: #000000;padding: 5px 17px 5px 16px;width: 0px;}
+		.m{padding: 1px 0px 1px 8px;background: #000000;width: 41px;}
+		.w{transition: all 3000ms;}
+		.m:active .m1{transform: translate(0px,10px);}
+		.m:active .m3{transform: translate(0px,10px);}
+		.m:active .m5{opacity: 1;}
+		.m:active .m5{transform: translate(0px,10px);}
+		.m:active .m7{transform: translate(0px,10px);}
 
 		
 
@@ -37,14 +49,15 @@
 <body>
 	    <div class="ccc">
 	    <div class="t">
-		<div class="e">
-		<div class="m"></div>
-		<div class="mm"></div>
-		<div class="mmm"></div>
-		<div class="mmmm"></div>
-		<div class="mmmmm"></div>
-		<div class="mmmmmm"></div>
-		<div class="mmmmmmm"></div></div></div></div>
+		<div class="m">
+		<div class="m1 w"></div>
+		<div class="m2"></div>
+		<div class="m3 w"></div>
+		<div class="m4"></div>
+		<div class="m5 w"></div>
+		<div class="m6"></div>
+		<div class="m7 w"></div>
+		<div class="m8"></div></div></div></div>
 	    <div class="ooo">
 	    <div class="xxx">
 		<div class="qqq" >프로그래밍 아카이브 인코딩</div>

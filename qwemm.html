@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>우럭이네 사이트</title>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+	<style type="text/css">
+	body{
+		margin : 0px
+	}
+ 		.q{background: red; top: 300px;}
+		.w{background: orange; top: 350px;}
+		.e{background: yellow; top: 400px;}
+		.r{background: green; top: 450px;}
+		.m{height: 50px;width: 50px;box-shadow: 0 50px 50px rgba(0,0,0,.120);transition: all 2500ms; position: relative; right: -50px;}
+		.m:hover{transform: translate(1770px);}
+		.j:active{transform: scale(2);background: yellow;}
+		.j2:active{transform: scale(0.5);background: yellow;}
+
+		.q1{background: blue; top: 150px;}
+		.w1{background: navy; top: 200px;}
+		.e1{background: purple; top: 250px;}
+		.m1{height: 50px;width: 50px;box-shadow: 0 50px 50px rgba(0,0,0,.120);transition: all 2500ms; position: relative; right: -1820px;}
+		.m1:hover{transform: translate(-1770px);}
+
+		.q2{background: red; right: -750px; top: -300px;}
+		.w2{background: orange; right: -850px; top: -350px;}
+		.e2{background: yellow; right: -950px; top: -400px;}
+		.r2{background: green; right: -1050px; top: -450px;}
+		.m2{height: 50px;width: 50px;box-shadow: 0 50px 50px rgba(0,0,0,.120);transition: all 2500ms; position: relative;}
+		.m2:hover{transform: translate(0px,800px);}
+
+		.q3{background: blue; right: -800px; top: 300px;}
+		.w3{background: navy; right: -900px; top: 250px;}
+		.e3{background: purple; right: -1000px; top: 200px;}
+		.m3{height: 50px;width: 50px;box-shadow: 0 50px 50px rgba(0,0,0,.120);transition: all 2500ms; position: relative;}
+		.m3:hover{transform: translate(0px,-800px);}
+
+
+		.m4{height: 50px;width: 50px; background: #000000; transition: all 1500ms; position: absolute; right: 970px; top: 450px;}
+
+		.abc.first .g14{top: 50px; left: 800px; background: blue;}
+		.abc.first .g13{top: 50px; left: 900px;background: navy;}
+		.abc.first .g12{top: 50px; left: 1000px;background: purple;}
+
+		.abc.first .g11{top: 300px; left: 1820px;background: red;}
+		.abc.first .g10{top: 400px; left: 1820px;background: orange;}
+		.abc.first .g9 {top: 500px; left: 1820px;background: yellow;}
+		.abc.first .g8 {top: 600px; left: 1820px;background: green;}
+
+		.abc.first .g7 {top: 850px; left: 750px;background: red;}
+		.abc.first .g6 {top: 850px; left: 850px;background: orange;}
+		.abc.first .g5 {top: 850px; left: 950px;background: yellow;}
+		.abc.first .g4 {top: 850px; left: 1050px;background: green;}
+
+		.abc.first .g3 {top: 350px; left: 50px;background: blue;}
+		.abc.first .g2 {top: 450px; left: 50px;background: navy;}
+		.abc.first .g1 {top: 550px; left: 50px;background: purple;}
+
+		.z1 {color: #FFFFFF; width: 50px; height: 25px; background: #000000; position: absolute; right: 970px; top: 450px;}
+		.z2 {color: #FFFFFF; width: 50px; height: 25px; background: #000000; position: absolute; right: 970px; top: 475px;}
+
+		
+
+	</style>
+</head> 
+<body>
+	<div class="q m j"></div>
+	<div class="w m j2"></div>
+	<div class="e m j"></div>
+	<div class="r m j2"></div>
+
+	<div class="q1 m1"></div>
+	<div class="w1 m1"></div>
+	<div class="e1 m1"></div>
+
+	<div class="q2 m2"></div>
+	<div class="w2 m2"></div>
+	<div class="e2 m2"></div>
+	<div class="r2 m2"></div>
+
+	<div class="q3 m3"></div>
+	<div class="w3 m3"></div>
+	<div class="e3 m3"></div>
+
+
+	<div class="abc ">
+	<div class="g1 m4"></div>
+	<div class="g2 m4"></div>
+	<div class="g3 m4"></div>
+	<div class="g4 m4"></div>
+	<div class="g5 m4"></div>
+	<div class="g6 m4"></div>
+	<div class="g7 m4"></div>
+	<div class="g8 m4"></div>
+	<div class="g9 m4"></div>
+	<div class="g10 m4"></div>
+	<div class="g11 m4"></div>
+	<div class="g12 m4"></div>
+	<div class="g13 m4"></div>
+	<div class="g14 m4"></div></div>
+
+	<script type="text/javascript">
+		function bomb(){$('.abc').removeClass('first')}
+
+		function act(){$('.abc').addClass('first')}
+</script>
+
+	<div class="z1" onclick="bomb()"></div>
+	<div class="z2" onclick="act()"></div>
+
+
+
+
+</body>
+</html>

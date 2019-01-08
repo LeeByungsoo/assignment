@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+body{margin:0;}
+header{
+background: #63bde5;
+}
+.wrap{
+height:60px;
+width:1000px;
+margin:0 auto;
+}
+.box{
+width:60px;
+height:60px;
+float:left;
+position: relative;
+background:black;
+}
+.box:hover .b1{
+ transform: translate(0,13px) rotate(45deg);
+}
+.box:hover .b2{
+opacity: 0;
+}
+.box:hover .b3{
+transform: translate(0,-12px) rotate(-45deg);
+}
+.box:active .b1{
+transform: translate(0,-10px);
+opacity: 0;
+}
+.box:active .b2{
+transform: translate(0,-10px);
+opacity: 1;
+}
+.box:active .b3{
+transform: translate(0,-10px);
+}
+.box:active .b4{
+transform: translate(0,-10px);
+opacity: 1;
+}
+.bar{
+position: absolute;
+left:10px;
+width:40px;
+height:5px;
+background: white;
+transition: all 3000ms;
+}
+.b1{
+top:15px;
+}
+.b2{
+top:28px;
+}
+.b3{
+top:40px;
+}
+.b4{
+top:50px;
+opacity: 0;
+}
+.imsi{
+	height: 5000px;
+	width: 100px;
+	background-color: blue;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap">
+<div class="box">
+<div class="bar b1"></div>
+<div class="bar b2"></div>
+<div class="bar b3"></div>
+<div class="bar b4"></div>
+</div>
+</div>
+</header>
+<div class="imsi">흠</div>
+</body>
+</html>

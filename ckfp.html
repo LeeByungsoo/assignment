@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>action button</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<style type="text/css">
+	body{margin : 0px; background: #E0F7FA}
+		
+		.uu{width: 300px; height: 50px; background: #0097A7; position: absolute; top: 400px; left: 800px; text-align: center; font-size: 37px; font-weight: bold; color: #FFFFFF;}
+
+		.ww{position: absolute; width: 100%; height: 50px;  background: #B2EBF2;}
+
+		.ee{width: 33px; height: 22px; background: #00ACC1; color: #FFFFFF; position: absolute; top: 400px; left: 800px;}
+
+		.s{width: 250px; padding: 2px 0px 2px 0px; top: 400px; left: 800px; position: absolute; transition: all 500ms; text-align: center; font-size: 25px; font-weight: bold; color: #FFFFFF;}
+		.mm.firs .m1{top: 450px; left: 1400px; background: #00ACC1;}
+		.mm.firs .m2{top: 600px; left: 400px; background: #00BCD4;}
+		.mm.firs .m3{top: 100px; left: 1100px; background: #26C6DA;}
+		.mm.firs .m4{top: 150px; left: 500px; background: #4DD0E1;}
+		.mm.firs .m5{top: 750px; left: 1000px; background: #80DEEA;}
+		
+		.m{top: 400px; left: 650px; position: absolute; transition: all 500ms;}		
+		.mm.fi .m6{top: 850px; left: 900px; background: red; width: 100px; height: 50px;}
+		.mm.fi .m7{top: 800px; left: 850px; background: red; width: 200px; height: 50px;}
+		.mm.fi .m8{top: 750px; left: 800px; background: red; width: 300px; height: 50px;}
+		.mm.fi .m9{top: 700px; left: 750px; background: red; width: 400px; height: 50px;}
+		.mm.fi .m11{top: 650px; left: 700px; background: red; width: 500px; height: 50px;}
+		.mm.fi .m12{top: 600px; left: 650px; background: red; width: 600px; height: 50px;}
+		.mm.fi .m13{top: 550px; left: 600px; background: red; width: 700px; height: 50px;}
+		.mm.fi .m14{top: 500px; left: 550px; background: red; width: 800px; height: 50px;}
+		.mm.fi .m15{top: 450px; left: 500px; background: red; width: 900px; height: 50px;}
+		.mm.fi .m16{top: 400px; left: 500px; background: red; width: 900px; height: 50px;}
+		.mm.fi .m17{top: 350px; left: 500px; background: red; width: 900px; height: 50px;}
+		.mm.fi .m18{top: 300px; left: 500px; background: red; width: 900px; height: 50px;}
+		.mm.fi .m19{top: 250px; left: 500px; background: red; width: 900px; height: 50px;}
+		.mm.fi .m20{top: 200px; left: 550px; background: red; width: 350px; height: 50px;}
+		.mm.fi .m21{top: 200px; left: 1000px; background: red; width: 350px; height: 50px;}
+		.mm.fi .m22{top: 150px; left: 600px; background: red; width: 250px; height: 50px;}
+		.mm.fi .m23{top: 150px; left: 1050px; background: red; width: 250px; height: 50px;}
+		.mm.fi .m24{top: 900px; left: 900px; background: #000000; width: 100px; height: 50px;}
+		.mm.fi .m25{top: 850px; left: 850px; background: #000000; width: 50px; height: 50px;}
+		.mm.fi .m26{top: 800px; left: 800px; background: #000000; width: 50px; height: 50px;}
+		.mm.fi .m27{top: 750px; left: 750px; background: #000000; width: 50px; height: 50px;}
+		.mm.fi .m28{top: 700px; left: 700px; background: #000000; width: 50px; height: 50px;}
+		.mm.fi .m29{top: 650px; left: 650px; background: #000000; width: 50px; height: 50px;}
+		.mm.fi .m30{top: 600px; left: 600px; background: #000000; width: 50px; height: 50px;}
+		.mm.fi .m31{top: 550px; left: 550px; background: #000000; width: 50px; height: 50px;}
+		.mm.fi .m32{top: 500px; left: 500px; background: #000000; width: 50px; height: 50px;}
+		.mm.fi .m33{top: 250px; left: 450px; background: #000000; width: 50px; height: 250px;}
+		.mm.fi .m34{top: 200px; left: 500px; background: #000000; width: 50px; height: 50px;}
+		.mm.fi .m35{top: 150px; left: 550px; background: #000000; width: 50px; height: 50px;}
+		.mm.fi .m36{top: 100px; left: 600px; background: #000000; width: 250px; height: 50px;}
+		.mm.fi .m37{top: 150px; left: 850px; background: #000000; width: 50px; height: 50px;}
+		.mm.fi .m38{top: 200px; left: 900px; background: #000000; width: 100px; height: 50px;}
+		.mm.fi .m39{top: 150px; left: 1000px; background: #000000; width: 50px; height: 50px;}
+		.mm.fi .m40{top: 100px; left: 1050px; background: #000000; width: 250px; height: 50px;}
+		.mm.fi .m41{top: 150px; left: 1300px; background: #000000; width: 50px; height: 50px;}
+		.mm.fi .m42{top: 200px; left: 1350px; background: #000000; width: 50px; height: 50px;}
+		.mm.fi .m43{top: 250px; left: 1400px; background: #000000; width: 50px; height: 250px;}
+		.mm.fi .m44{top: 500px; left: 1350px; background: #000000; width: 50px; height: 50px;}
+		.mm.fi .m45{top: 550px; left: 1300px; background: #000000; width: 50px; height: 50px;}
+		.mm.fi .m46{top: 600px; left: 1250px; background: #000000; width: 50px; height: 50px;}
+		.mm.fi .m47{top: 650px; left: 1200px; background: #000000; width: 50px; height: 50px;}
+		.mm.fi .m48{top: 700px; left: 1150px; background: #000000; width: 50px; height: 50px;}
+		.mm.fi .m49{top: 750px; left: 1100px; background: #000000; width: 50px; height: 50px;}
+		.mm.fi .m50{top: 800px; left: 1050px; background: #000000; width: 50px; height: 50px;}
+		.mm.fi .m51{top: 850px; left: 1000px; background: #000000; width: 50px; height: 50px;}
+
+
+	</style>
+</head>
+<body>
+
+
+
+	<div class="mm ">
+		<a target="_blank" href="file:///C:/repo/assignment/Bread.html"><div class="m1 s">처음 만든 작품</div></a>
+		<a target="_blank" href="file:///C:/repo/assignment/menu.html"><div class="m2 s">메뉴판</div></a>
+		<a target="_blank" href="file:///C:/repo/assignment/qwemm.html"><div class="m3 s">가운데에서 터지는거</div></a>
+		<a target="_blank" href="file:///C:/repo/assignment/second.html"><div class="m4 s">빨주노초</div></a>
+		<a target="_blank" href="file:///C:/repo/assignment/jquery.html"><div class="m5 s">pp0,pp1,pp2</div></a></div>
+
+	<div class="uu" onclick="act()">클릭!!</div>
+	<div class="ww" onclick="ac()"></div>
+
+
+	<div class="mm ">
+		<div class="m6 m"></div>
+		<div class="m7 m"></div>
+		<div class="m8 m"></div>
+		<div class="m9 m"></div>
+		<div class="m10 m"></div>
+		<div class="m11 m"></div>
+		<div class="m12 m"></div>
+		<div class="m13 m"></div>
+		<div class="m14 m"></div>
+		<div class="m15 m"></div>
+		<div class="m16 m"></div>
+		<div class="m17 m"></div>
+		<div class="m18 m"></div>
+		<div class="m19 m"></div>
+		<div class="m20 m"></div>
+		<div class="m21 m"></div>
+		<div class="m22 m"></div>
+		<div class="m23 m"></div>
+		<div class="m24 m"></div>
+		<div class="m25 m"></div>
+		<div class="m26 m"></div>
+		<div class="m27 m"></div>
+		<div class="m28 m"></div>
+		<div class="m29 m"></div>
+		<div class="m30 m"></div>
+		<div class="m31 m"></div>
+		<div class="m32 m"></div>
+		<div class="m33 m"></div>
+		<div class="m34 m"></div>
+		<div class="m35 m"></div>
+		<div class="m36 m"></div>
+		<div class="m37 m"></div>
+		<div class="m38 m"></div>
+		<div class="m39 m"></div>
+		<div class="m40 m"></div>
+		<div class="m41 m"></div>
+		<div class="m42 m"></div>
+		<div class="m43 m"></div>
+		<div class="m44 m"></div>
+		<div class="m45 m"></div>
+		<div class="m46 m"></div>
+		<div class="m47 m"></div>
+		<div class="m48 m"></div>
+		<div class="m49 m"></div>
+		<div class="m50 m"></div>
+		<div class="m51 m"></div>
+	</div>
+	<div class="ee" onclick="a()">처음</div>
+	<script type="text/javascript">
+		function act(){$('.mm').removeClass('fi') .addClass('firs') }
+		function ac(){$('.mm').removeClass('firs') .addClass('fi') }
+		function a(){$('.mm').removeClass('firs fi') }
+	</script>
+
+
+
+
+
+
+</body>
+</html>

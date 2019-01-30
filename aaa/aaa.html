@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>메인,소개,뷰</title>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+	<style type="text/css">
+
+	
+	.qq{width: 140px; height: 95px; padding: 0px 10px 1px 10px; border: solid 3px #BA68C8; position: absolute; top: 400px; left: 100px; font-size: 70px; color: #FFEB3B;}
+	.ww{width: 140px; height: 95px; padding: 0px 10px 1px 10px; border: solid 3px #BA68C8; position: absolute; top: 400px; left: 600px; font-size: 70px; color: #FFEB3B;}
+	.ee{width: 70px; height: 95px; padding: 0px 10px 1px 10px; border: solid 3px #BA68C8; position: absolute; top: 400px; left: 1100px; font-size: 70px; color: #FFEB3B;}
+
+	.qq:hover {background: #8E24AA; font-size: 90px; width: 180px; height: 125px; color: #FFEB3B; font-weight: bold; border: solid 0px ;}
+	.ww:hover {background: #8E24AA; font-size: 90px; width: 180px; height: 125px; color: #FFEB3B; font-weight: bold; border: solid 0px;}
+	.ee:hover {background: #8E24AA; font-size: 90px; width: 90px; height: 125px; color: #FFEB3B; font-weight: bold; border: solid 0px;}
+
+			.c {width: 100px; height: 50px; position: absolute; font-weight: bold; font-size: 45px; text-align: right; top: 600px; left: 560px;}
+			.c2{ opacity: 0;}
+			.c3{ opacity: 0;}
+			.o{width: 150px; height: 5px; position: absolute; top: 600px; left: 660px; font-weight: bold; font-size: 45px;}
+		.parent.first .c1{opacity: 1;}
+		.parent.first .c2{opacity: 0;}
+		.parent.first .c3{opacity: 0;}
+
+		.parent.firs .c1{opacity: 0;}
+		.parent.firs .c2{opacity: 1;}
+		.parent.firs .c3{opacity: 0;}
+
+		.parent.fir .c1{opacity: 0;}
+		.parent.fir .c2{opacity: 0;}
+		.parent.fir .c3{opacity: 1;}
+
+	
+
+	</style>
+</head>
+<body>
+	
+	<div class="qq" onclick="bomb()">메뉴</div>
+	<div class="ww" onclick="act()">소개</div>
+	<div class="ee" onclick="ctrl()">뷰</div>
+
+	<div class="parent ">
+		<div class="c c3">뷰</div>
+		<div class="c c2">소개</div>
+		<div class="c c1">메뉴</div>
+	</div>
+		<div class="o">입니다.</div>
+	<script type="text/javascript">
+
+			function bomb(){alert("1번 버튼 누름")}
+
+		function act(){alert("2번 버튼 누름")}
+
+		function ctrl(){alert("3번 버튼 누름")}
+
+		function bomb(){$('.parent').removeClass('firs fir') .addClass('first')}
+
+		function act(){$('.parent').removeClass('first fir') .addClass('firs')}
+
+		function ctrl(){$('.parent').removeClass('first firs') .addClass('fir')}
+
+
+
+
+	</script>
+
+
+
+
+
+
+</body>
+</html>
